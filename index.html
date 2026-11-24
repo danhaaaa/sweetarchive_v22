@@ -6,38 +6,45 @@
 <style>
 :root{color-scheme:light;--pink:#F5D4DE;--cream:#FFF9EE;--cherry:#A83F50;--brown:#783B40;--line:#e3b9c1}
 *{box-sizing:border-box}
-body{margin:0;background:var(--cream);color:var(--brown);font-family:"Noto Serif KR","Apple SD Gothic Neo",Georgia,serif;line-height:1.5;padding-bottom:env(safe-area-inset-bottom,0)}
+body{margin:0;color:var(--brown);font-family:"Noto Serif KR","Apple SD Gothic Neo",Georgia,serif;line-height:1.5;padding-bottom:env(safe-area-inset-bottom,0);background:radial-gradient(circle,rgba(245,212,222,.55) 1.5px,transparent 2px) 0 0/22px 22px,var(--cream)}
 .gingham{background:linear-gradient(90deg,rgba(168,63,80,.13) 50%,transparent 0) 0 0/36px 36px,linear-gradient(rgba(168,63,80,.13) 50%,transparent 0) 0 0/36px 36px,var(--pink)}
-header{text-align:center;padding:calc(44px + env(safe-area-inset-top,0px)) 20px 70px;position:relative}
+header{padding:0 16px 60px;position:relative}
 header:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:16px;background:radial-gradient(circle at 12px 16px,var(--cream) 11px,transparent 12px) 0 0/24px 16px}
-.badge{display:inline-block;background:var(--cream);border:1.5px solid var(--cherry);border-radius:30px;padding:3px 16px;letter-spacing:3px;font-size:12px}
-h1{font:italic 700 clamp(44px,9vw,86px) Georgia,serif;margin:10px 0 0;text-shadow:3px 3px 0 var(--cream)}
-.slogan{margin:4px 0 18px}
-.bow{width:92px;display:block;margin:0 auto -4px}
+.top{height:calc(54px + env(safe-area-inset-top,0px));margin:0 -16px 38px;background:repeating-linear-gradient(90deg,var(--cherry) 0 48px,var(--cream) 48px 96px);position:relative}
+.top:after{content:"";position:absolute;left:0;right:0;bottom:-14px;height:14px;background:radial-gradient(circle at 24px 0,var(--cherry) 24px,transparent 25px) 0 0/96px 14px,radial-gradient(circle at 72px 0,var(--cream) 24px,transparent 25px) 0 0/96px 14px}
+.sign{max-width:620px;margin:0 auto;text-align:center;background:var(--cream);border:3px double var(--cherry);border-radius:220px 220px 22px 22px;padding:30px 24px 30px;box-shadow:0 8px 0 rgba(120,59,64,.12)}
+.bow{width:74px;display:block;margin:0 auto 2px}
+.badge{display:inline-block;border:1.5px solid var(--cherry);border-radius:30px;padding:2px 16px;letter-spacing:3px;font-size:12px;background:#fff}
+h1{font:italic 700 clamp(40px,8vw,72px) Georgia,serif;margin:8px 0 0;color:var(--cherry);text-shadow:2px 2px 0 var(--pink)}
+.slogan{margin:2px 0 16px}
 main{max-width:1080px;margin:0 auto;padding:30px 18px}
 h2{font:italic 700 28px Georgia,serif;margin:0 0 6px}
 .sm,.muted{font-size:13px;color:#976f6c;margin:2px 0}
-.btn,input,select{font:inherit;border:1.5px solid #c98c90;border-radius:24px;padding:9px 16px;background:#fffdf7;color:var(--brown)}
+.btn,input,select{font:inherit;border:1.5px solid #c98c90;border-radius:24px;padding:9px 16px;background:#fff;color:var(--brown)}
 .btn{cursor:pointer}.btn:hover,.btn.on{background:var(--cherry);color:#fff;border-color:var(--cherry)}.btn:disabled{opacity:.45;cursor:default}
 .btn.s{padding:5px 12px;font-size:13px}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 form.row input{flex:1;min-width:0}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
-.chip{display:flex;align-items:center;gap:6px;padding:4px 14px 4px 6px}.chip svg{width:30px;height:30px}
-.awning{height:30px;margin-top:22px;border-radius:10px 10px 0 0;background:repeating-linear-gradient(90deg,var(--cherry) 0 38px,var(--cream) 38px 76px);position:relative}
-.awning:after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:10px;background:radial-gradient(circle at 19px 0,var(--cherry) 19px,transparent 20px) 0 0/76px 10px,radial-gradient(circle at 57px 0,#f0dcd8 19px,transparent 20px) 0 0/76px 10px}
-.case{border:6px double var(--cherry);border-top:0;background:#fffdf8;padding:30px 18px 22px;border-radius:0 0 18px 18px;min-height:220px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:20px}
-.card{background:#fff;border:1px solid var(--line);border-radius:90px 90px 14px 14px;padding:14px 12px;text-align:center;box-shadow:0 5px 0 #f2ded8;display:flex;flex-direction:column;gap:3px}
-.card h3{font-size:16px;margin:4px 0 0;overflow-wrap:anywhere}.card p{margin:0}
-.art{background:var(--pink);border-radius:80px 80px 10px 10px;padding:14px 0 8px}.art svg{width:78px;height:78px}
+.chip{display:flex;align-items:center;gap:6px;padding:4px 14px 4px 6px;background:var(--pink);border-color:var(--pink)}.chip svg{width:30px;height:30px}
+.menuhead{margin-top:24px;background:var(--cherry);color:var(--cream);text-align:center;letter-spacing:8px;padding:9px;font:italic 700 20px Georgia,serif;border-radius:16px 16px 0 0}
+.case{border:2px solid var(--cherry);border-top:0;background:#fffdf8;padding:26px 18px 22px;border-radius:0 0 18px 18px;box-shadow:inset 0 0 0 6px #fffdf8,inset 0 0 0 7.5px var(--line);min-height:220px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:22px}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:0 0 14px;text-align:center;box-shadow:0 5px 0 #f2ded8;display:flex;flex-direction:column;gap:3px;overflow:hidden}
+.card>*:not(.art){margin-left:12px;margin-right:12px}
+.card h3{font-size:16px;margin:6px 12px 0;overflow-wrap:anywhere}.card p{margin-top:0;margin-bottom:0}
+.card p b{background:var(--cherry);color:#fff;border-radius:12px;padding:1px 9px;font-size:13px;white-space:nowrap}
+.art{background:var(--pink);padding:18px 0 14px;position:relative}.art svg{width:84px;height:84px}
+.art:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:10px;background:radial-gradient(circle at 10px 10px,#fff 9px,transparent 10px) 0 0/20px 10px}
+.card:nth-child(3n+2) .art{background:#FFEBD2}.card:nth-child(3n) .art{background:#FBE0E4}
 .cmp{font-size:13px;cursor:pointer}.cmp input{padding:0;margin-right:4px;accent-color:var(--cherry)}
 .cb{position:relative;display:inline-block;width:22px;height:22px}.cb svg{position:absolute;inset:0;width:22px;height:22px}.cb .g{opacity:.22}
 .cubes{display:flex;flex-wrap:wrap;gap:2px;justify-content:center;min-height:22px}
 #status{min-height:26px}#status.err{color:var(--cherry);font-weight:700}
-.receipt{max-width:430px;margin:56px auto 30px;background:#fff;padding:26px 22px 32px;font-family:"Courier New",monospace;position:relative;box-shadow:0 6px 0 rgba(120,59,64,.07);font-size:14px}
+.receipt{max-width:430px;margin:56px auto 30px;background:#fff;padding:26px 22px 32px;font-family:"Courier New",monospace;position:relative;box-shadow:0 6px 0 rgba(120,59,64,.08);font-size:14px;border-top:6px solid var(--cherry)}
 .receipt:after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:10px;background:linear-gradient(135deg,#fff 50%,transparent 0) 0 0/14px 10px,linear-gradient(225deg,#fff 50%,transparent 0) 0 0/14px 10px}
 .receipt h2{text-align:center}.receipt .c{text-align:center}
+.bc{height:34px;margin:14px 0 10px;background:repeating-linear-gradient(90deg,var(--brown) 0 2px,transparent 2px 5px,var(--brown) 5px 6px,transparent 6px 10px)}
 .ln{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px dashed #e6cfcf}
 .ln select{padding:2px 8px;font-size:12px;max-width:100%}
 .tot{border-top:2px solid var(--brown);margin-top:8px;padding-top:6px}.tot .ln{border:0;font-weight:700;padding:2px 0}
@@ -46,29 +53,30 @@ form.row input{flex:1;min-width:0}
 dialog{border:6px double var(--cherry);border-radius:20px;background:var(--cream);color:var(--brown);width:min(94vw,520px);padding:22px}
 dialog::backdrop{background:rgba(80,37,43,.4)}
 #cmpbar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:5;display:none}
-footer{text-align:center;padding:28px 18px;font-size:12px;border-top:1px dashed var(--line)}
+footer{text-align:center;padding:28px 18px;font-size:12px;border-top:6px double var(--cherry);background:var(--pink)}
 a{color:var(--cherry)}
-@media(max-width:520px){.grid{grid-template-columns:1fr 1fr;gap:12px}.art svg{width:60px;height:60px}.case{padding:24px 10px 16px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr 1fr;gap:12px}.art svg{width:62px;height:62px}.case{padding:20px 10px 16px}.sign{border-radius:140px 140px 18px 18px;padding:26px 14px}}
 </style></head><body>
-<header class="gingham">
-<svg class="bow" viewBox="0 0 92 56" stroke="#783B40" stroke-width="1.6" stroke-linejoin="round"><path d="M46 28C30 4 6 6 8 26s26 8 38 2zM46 28c16-24 40-22 38-2s-26 8-38 2z" fill="#A83F50"/><path d="M42 30l-10 24 10-6 4 6 4-6 10 6-10-24z" fill="#A83F50"/><circle cx="46" cy="28" r="6" fill="#d9707f"/></svg>
-<span class="badge">✦ THE LITTLE DESSERT LIBRARY ✦</span>
+<header class="gingham"><div class="top"></div>
+<div class="sign">
+<svg class="bow" viewBox="0 0 92 56" stroke="#783B40" stroke-width="1.6" stroke-linejoin="round"><path d="M46 28C30 4 6 6 8 26s26 8 38 2zM46 28c16-24 40-22 38-2s-26 8-38 2z" fill="#A83F50"/><path d="M42 30l-10 24 10-6 4 6 4-6 10 6-10-24z" fill="#A83F50"/><circle cx="46" cy="28" r="6" fill="#d9707f"/><path d="M16 18q8-4 18 6M76 18q-8-4-18 6" fill="none" stroke="#FFF9EE"/></svg>
+<span class="badge">✦ SINCE 2026 · DESSERT LIBRARY ✦</span>
 <h1>Sweet Archive</h1>
 <p class="slogan">달콤함을 기록하는 작은 디저트 가게</p>
 <button class="btn" data-a="go">오늘의 진열대 보기 ♡</button>
-</header>
+</div></header>
 <main id="shop">
 <h2>Today’s menu</h2>
 <p class="muted">디저트를 고르고, 그 안에 담긴 영양성분을 발견해 보세요. 모든 수치는 식품의약품안전처 공공데이터입니다.</p>
 <form class="row" id="sf"><input id="q" maxlength="30" placeholder="어떤 디저트가 궁금하세요? (예: 딸기케이크)" aria-label="디저트 검색"><button class="btn">검색</button></form>
 <div class="chips" id="chips"></div>
 <div class="row"><span class="sm">검색 범위</span><button class="btn s" data-a="type" data-t="rep">대표 식품</button><button class="btn s" data-a="type" data-t="prod">시중 제품</button><button class="btn s" data-a="type" data-t="all">전체</button></div>
-<div class="awning"></div>
+<div class="menuhead">✦ MENU ✦</div>
 <section class="case"><p id="status" class="muted" role="status"></p><div class="grid" id="grid"></div><p class="c" style="text-align:center" id="more"></p></section>
 
 <section class="receipt"><div class="c sm">♡ SWEET ARCHIVE ♡</div><h2>Your sweet receipt</h2><div class="c sm" id="date"></div><div id="basket"></div><div id="total"></div>
 <p class="sm">식품마다 기준량이 달라요(예: 100g). 항목별로 ‘기준량’ 또는 ‘식품중량(1개/1팩 등)’을 고를 수 있고, 환산은 단위(g, ml)가 같을 때만 가능합니다. 실제 섭취량과 다를 수 있습니다.</p>
-<div class="c"><button class="btn s" data-a="clear">비우기</button></div></section>
+<div class="bc" aria-hidden="true"></div><div class="c sm">THANK YOU · SEE YOU AGAIN ♡</div><div class="c" style="margin-top:8px"><button class="btn s" data-a="clear">비우기</button></div></section>
 </main>
 <button class="btn on" id="cmpbar" data-a="cmpgo"></button>
 <dialog id="dlg"><div id="dbody"></div><p style="text-align:right;margin:14px 0 0"><button class="btn" data-a="close">닫기</button></p></dialog>
@@ -83,15 +91,16 @@ const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const fv=(v,u)=>v==null?'미제공':Math.round(v*10)/10+' '+u;
 const NUT=[['kcal','열량','kcal'],['sugar','당류','g'],['fat','지방','g'],['protein','단백질','g'],['carb','탄수화물','g']];
 const CATS=['케이크','쿠키','마카롱','도넛','아이스크림','푸딩','스콘'];
+const SH='<ellipse cx="32" cy="57" rx="23" ry="3" fill="#783B40" opacity=".12" stroke="none"/>';
 const A={
-케이크:'<path d="M10 36h44v16a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4z" fill="#F5D4DE"/><path d="M10 36q0-8 22-8t22 8q-4 6-7 0-4 6-7 0-4 6-8 0-4 6-7 0-4 6-7 0z" fill="#FFF9EE"/><circle cx="32" cy="22" r="6" fill="#A83F50"/><path d="M32 16q1-6 7-8"/>',
-쿠키:'<circle cx="32" cy="32" r="22" fill="#E8B87A"/><g fill="#783B40"><circle cx="24" cy="25" r="3"/><circle cx="38" cy="22" r="3"/><circle cx="41" cy="37" r="3"/><circle cx="25" cy="41" r="3"/><circle cx="32" cy="31" r="2"/></g>',
-마카롱:'<path d="M10 30q0-14 22-14t22 14z" fill="#F5D4DE"/><rect x="9" y="30" width="46" height="6" rx="3" fill="#FFF9EE"/><path d="M10 36h44q0 14-22 14T10 36z" fill="#F5D4DE"/>',
-도넛:'<circle cx="32" cy="32" r="23" fill="#E8B87A"/><circle cx="32" cy="32" r="19" fill="#F5D4DE"/><circle cx="32" cy="32" r="6" fill="#FFF9EE"/><path d="M20 24l4-2M40 20l3 3M44 36l3-2M24 44l-1-4M36 46l1-4" stroke="#A83F50"/>',
-아이스크림:'<path d="M22 34l10 24 10-24z" fill="#E8B87A"/><circle cx="32" cy="26" r="12" fill="#F5D4DE"/><circle cx="32" cy="15" r="9" fill="#FFF9EE"/><circle cx="32" cy="6" r="3" fill="#A83F50"/>',
-푸딩:'<path d="M16 28h32l-4 24H20z" fill="#F7DFA0"/><path d="M14 28q0-10 18-10t18 10z" fill="#9A5B3C"/><circle cx="32" cy="14" r="4.5" fill="#A83F50"/>',
-스콘:'<path d="M8 46Q10 20 32 16q22 4 24 30z" fill="#E8B87A"/><path d="M20 38l2 3M32 32l2 3M42 40l2 3"/>',
-기본:'<path d="M24 30q2-18 14-22M42 28q-4-12-4-20"/><circle cx="24" cy="42" r="10" fill="#A83F50"/><circle cx="42" cy="40" r="10" fill="#A83F50"/>'};
+케이크:SH+'<rect x="9" y="41" width="46" height="14" rx="4" fill="#F5D4DE"/><rect x="9" y="36" width="46" height="6" rx="3" fill="#FFF9EE"/><rect x="9" y="27" width="46" height="10" rx="4" fill="#F5D4DE"/><path d="M9 28q0-7 23-7t23 7q-3 5-6 0-3 6-6 0-3 6-6 0-3 6-6 0-3 6-6 0-3 6-6 0z" fill="#FFF9EE"/><circle cx="32" cy="17" r="5.5" fill="#A83F50"/><path d="M32 12q0-5 6-7M32 12q-3-3-7-2"/><path d="M30 15q1-1 2-1" stroke="#FFF9EE" stroke-width="1.2"/><path d="M16 48h.1M26 46h.1M37 49h.1M47 47h.1" stroke="#A83F50" stroke-width="2.6"/>',
+쿠키:SH+'<path d="M32 10c14 0 23 9 23 22s-9 22-23 22S9 45 9 32 18 10 32 10z" fill="#E8B87A"/><path d="M19 22q5-6 13-6" stroke="#FFF9EE" stroke-width="2"/><path d="M21 26l5 2-2 5-5-2zM38 20l5 1-1 5-5-1zM42 36l5 2-2 5-5-2zM24 41l4 1-1 4-4-1zM33 31l3 1-1 3-3-1z" fill="#783B40"/><path d="M45 48q3-1 5-4" stroke-dasharray="1 3"/>',
+마카롱:SH+'<path d="M10 30q0-15 22-15t22 15z" fill="#F5D4DE"/><path d="M10 30h44v3q-3 3-6 0-3 3-6 0-3 3-6 0-3 3-6 0-3 3-6 0-3 3-6 0-3 3-5 0z" fill="#FFF9EE"/><path d="M10 36h44q0 13-22 13T10 36z" fill="#F5D4DE"/><path d="M20 22q3-4 8-4" stroke="#FFF9EE" stroke-width="2"/><path d="M14 46q1 4 5 5M50 46q-1 4-5 5"/><path d="M30 41q2 2 4 0" stroke="#FFF9EE" stroke-width="1.6"/>',
+도넛:SH+'<circle cx="32" cy="32" r="24" fill="#E8B87A"/><path d="M32 12c13 0 18 8 20 14 3 6 0 15-6 19-5 4-10 3-14 3-8 0-14-2-18-8-4-7-2-16 4-21 4-4 9-7 14-7z" fill="#F5D4DE"/><circle cx="32" cy="32" r="6.5" fill="#FFF9EE"/><path d="M20 24l4-2M38 19l3 3M45 32l3-2M22 42l3-3M36 45l1-4M29 17l-1 4" stroke="#A83F50" stroke-width="2"/><path d="M42 41l3 2M17 33l3 1" stroke="#783B40" stroke-width="2"/>',
+아이스크림:'<path d="M21 36L32 60 43 36z" fill="#E8B87A"/><path d="M24 42l8 8M29 38l9 9M40 42l-8 8M35 38l-9 9" stroke-width="1"/><path d="M17 37q-1-13 15-13t15 13q-3 4-7 0-4 4-8 0-4 4-8 0-4 4-7 0z" fill="#F5D4DE"/><path d="M21 27q0-12 11-12t11 12z" fill="#FFF9EE"/><circle cx="32" cy="12" r="4.5" fill="#A83F50"/><path d="M32 8q1-4 5-5"/><path d="M24 32q1-3 4-3" stroke="#FFF9EE" stroke-width="1.6"/>',
+푸딩:'<ellipse cx="32" cy="55" rx="26" ry="5" fill="#FFF9EE"/><path d="M16 26h32l-3 26H19z" fill="#F7DFA0"/><path d="M14 27q0-10 18-10t18 10z" fill="#9A5B3C"/><path d="M18 27v5M31 27v8M45 27v4" stroke="#9A5B3C" stroke-width="4"/><path d="M25 38v8" stroke="#FFF9EE" stroke-width="2"/><circle cx="32" cy="13" r="4.5" fill="#A83F50"/><path d="M32 9q1-4 5-5"/>',
+스콘:SH+'<path d="M7 47Q8 22 32 17q24 4 25 30z" fill="#E8B87A"/><path d="M12 38q20-8 40 0" stroke-dasharray="2 3"/><path d="M22 30q10-7 20 0q-4 6-10 6t-10-6z" fill="#A83F50"/><path d="M27 29q3-2 6-1" stroke="#FFF9EE" stroke-width="1.6"/><path d="M14 44h.1M26 43h.1M40 44h.1M50 42h.1" stroke="#783B40" stroke-width="2.4"/>',
+기본:'<path d="M24 30q2-18 14-22M42 28q-4-12-4-20"/><path d="M38 8q8-4 12 2-6 4-12-2z" fill="#9CB27A"/><circle cx="24" cy="42" r="10" fill="#A83F50"/><circle cx="42" cy="40" r="10" fill="#A83F50"/><path d="M20 38q1-3 4-3M38 36q1-3 4-3" stroke="#FFF9EE" stroke-width="1.6"/>'};
 const RX={케이크:/케이크|케익/,쿠키:/쿠키/,마카롱:/마카롱/,도넛:/도넛|도너츠/,아이스크림:/아이스크림|젤라또/,푸딩:/푸딩/,스콘:/스콘/};
 const art=(n,c)=>`<svg viewBox="0 0 64 64" fill="none" stroke="#783B40" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">${A[c&&A[c]?c:(CATS.find(k=>RX[k].test(n))||'기본')]}</svg>`;
 const cube=f=>`<span class="cb"><svg class="g" viewBox="0 0 24 24">${cp()}</svg><svg viewBox="0 0 24 24" style="clip-path:inset(0 ${Math.round((1-f)*100)}% 0 0)">${cp()}</svg></span>`;
